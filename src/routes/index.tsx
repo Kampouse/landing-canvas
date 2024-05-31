@@ -48,11 +48,6 @@ const BreakFasts = () => {
     links: "https://kampouse-food.my.canva.site/images/38fa3dab7e6fc590b34655f62d0da351.jpg"
   },
   ]
-
-
-
-
-
   return (
     <div class="gap-6  py-8 px-5 mt-[2.5em] h-fit bg-white">
       <div class="pt-2">
@@ -110,25 +105,20 @@ const Service = () => {
       description: "Order online and pick up your meal at the cafe."
     },
     {
-
-
       title: "Delivery",
       description: "Order online and we'll bring your meal to you."
     }
 
   ]
-
-
-
   return (
-    <div class="flex flex-col">
+    <div class="flex flex-col  h-fit lg:h-72 ">
       <h1 class="text-5xl text-primary pl-2 pb-5 m-10">Our cafe, your way</h1>
-      <div class="flex lg:flex-row flex-col  align-middle lg:ml-[10em]   ">
+      <div class="flex lg:flex-row flex-col  self-center lg:ml-[10em]   place-self-center ">
         {
           serv.map((elem) => {
             return (
               <>
-                <div class="flex  flex-col  align-middle ">
+                <div class="flex  flex-col  align-middle  ">
                   <h1 key={elem.title} class=" text-center ">{elem.title}</h1>
                   <p key={elem.description} class="m-5 mt-1 text-center">{elem.description}</p>
                 </div>
@@ -137,20 +127,52 @@ const Service = () => {
             )
           })
         }
-
-
-
       </div>
     </div>
-
-
-
   )
 }
 
+const TailMenu = () => {
+  return (
+    <div class="h-[25rem] lg:h-screen  bg-hero-footer gap-24 mb-2 lg:gap-[20em] flex flex-col p-8     bg-cover  bg-center ">
+      <h1 class="text-[2rem] lg:pl-32 lg:text-8xl text-6xl text-primary p-5 pb-6 pt-1   ">Healthy, hearty meals await.
+        See you soon!</h1>
+    </div>
+  );
+};
 
+const Footer = () => {
+  return (
+    <div class="bg-primary lg:h-[25rem] h-fit   gap-12 pb-20  flex flex-col p-2     bg-cover  bg-center  ">
+      <h1 class="text-[2rem]  lg:text-8xl text-6xl  p-5 pb-6 pt-1  text-black lg:self-start self-center "> Cafe on  Qwik</h1>
+      <div class="flex flex-col self-center  ">
+        <div class="flex lg:flex-row flex-col lg:gap-10 gap-5  text-center text-3xl  ">
+          <div class="text-black gap-2 font-thin  ">
+            <h1 class="font-bold">get  in touch!</h1>
+            <p>123-456-7890</p>
+            <p> instagram</p>
+            <p> facebook</p>
+            <p> x</p>
+          </div>
+          <div class="text-black gap-3 font-thin   ">
+            <h1 class="font-bold">Email</h1>
+            <p class=""> contact@gmail.com</p>
+          </div>
+          <div class="text-black gap-2 font-thin ">
+            <h1 class="font-bold">Hours</h1>
+            <p>Mon-Fri: 7am-9pm</p>
+            <p>Sat-Sun: 8am-10pm</p>
+          </div>
+          <div class="text-black gap-2 font-thin ">
+            <h1 class="font-bold">Location</h1>
+            <p>123 Main St.</p>
+            <p>Springfield, IL 62701</p>
+          </div>
+        </div>
+      </div >
 
-
+    </div >)
+}
 
 
 export default component$(() => {
@@ -160,9 +182,8 @@ export default component$(() => {
       <Description />
       <BreakFasts />
       <Service />
-      <h1>Hi 👋</h1>
-      <div></div>
-
+      <TailMenu />
+      <Footer />
     </>
   );
 });

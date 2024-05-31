@@ -10,10 +10,9 @@ export default {
 
       backgroundImage: {
         'hero-foor': " linear-gradient(to top, rgba(128, 128, 128, 0), rgba(30, 20, 150, 0.7)), url('https://kampouse-food.my.canva.site/images/05e2af143e80a3acf18bf4604982abeb.jpg')",
+
+        'hero-footer': "linear-gradient(to top, rgba(128, 128, 128, 0), rgba(30, 20, 150, 0.7)), url('https://kampouse-food.my.canva.site/images/f486c54af226981830809c02831e42ce.jpg')",
       }
-
-
-
     },
   },
   plugins: [],
