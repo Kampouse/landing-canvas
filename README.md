@@ -1,4 +1,4 @@
-# Qwik City App ⚡️
+this just a webiste   a remade from canvas.com because i wanted some pratice!
 
 - [Qwik Docs](https://qwik.dev/)
 - [Discord](https://qwik.dev/chat)
@@ -8,7 +8,8 @@
 
 ---
 
-## Project Structure
+
+
 
 This project is using Qwik with [QwikCity](https://qwik.dev/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
 
