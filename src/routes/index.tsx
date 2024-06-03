@@ -10,7 +10,7 @@ const Header = () => {
         </h1>
         <h1 class=" lg:pl-base pl-5   p-5   text-xl  line-clamp-0  leading-0 ">
           {" "}
-          i wirte cod3 <br /> some time when i think about rat
+          i wired the  cod3  block  <br /> for some  time while being the rat
         </h1>
       </div>
     </header>
@@ -18,134 +18,72 @@ const Header = () => {
 };
 const Description = () => {
   return (
-    <div class="bg-[#4b4b4b]    lg:h-3/4 h-fit">
-      <h1 class=" text-primary pl-5 p-4 lg:pl-base underline-offset-4 underline">
-        who am i & what i ate{" "}
+    <div class="bg-[#4b4b4b]    lg:h-fit h-fit">
+
+      <h1 class=" lg:pt-24 text-5xl   pt-3   font-semibold text-primary  pl-5 lg:pl-base">
+        Hello am the  Reliable Rat   {" "}
       </h1>
-      <h1 class="text-5xl  font-semibold text-primary pt-5 pl-5 lg:pl-base">
-        Hello am the last Rat to stand{" "}
+      <h1 class=" text-primary   pl-5 pt-0 lg:pl-base underline-offset-4 underline">
+        who am i & what i rate for {" "}
       </h1>
-      <div class="flex flex-col   lg:w-2/4   w-5/6">
+      <div class="flex flex-col   lg:w-2/4   w-5/6  lg:h-80 ">
         <p class="ml-5  leading-6 text-white whitespace-normal lg:text-2xl sm:text-2xl md:text-2xl "></p>
-        <p class="p-5 lg:p-base lg:text-3xl lg:pt-5 mb-3">
-          {" "}
-          I'm a professional digital marketer and social media manager based in
-          California. I have worked with several brands in fine-tuning their
-          SEO, boosting their social media presence, and developing their
-          overall content strategy.{" "}
+        <p class="p-5  lg:pl-base lg:text-3xl lg:py-24    font-mono"> I am a professional rat.<br /> I eat all of the food. <br />  I am the  rat  that lasted
         </p>
       </div>
-    </div>
+    </div >
   );
 };
-const BreakFasts = () => {
-  const elems = [
-    "slow-cooked oats",
-    "Vine-ripened grapes & berries",
-    "Naturally sweetened dried fruit",
-    "Homemade yogurt",
-    "Freshly harvested honey",
-  ];
-
+const Services = () => {
   const linksDescription = [
+
     {
-      description: "Breakfast in a jar",
+      description: "Setup my base in haven",
       links:
-        "https://kampouse-food.my.canva.site/images/563a8d1623c30beadac2c6e17342e244.jpg",
+        "https://kampouse-food.my.canva.site/alice-website-maybe/images/2d11253c7e91e82bf4597458ec86fa10.svg",
     },
     {
-      description: "healthy meals",
+      description: "drink in the last saloon",
       links:
-        "https://kampouse-food.my.canva.site/images/2bc7569202dcddebaffef1d263421718.jpg",
+        "https://kampouse-food.my.canva.site/alice-website-maybe/images/32f25523f1da16a205e327fdd9ebc8e9.svg",
     },
     {
-      description: "Guilt-free Desserts",
+      description: " enjoy abstract art",
       links:
-        "https://kampouse-food.my.canva.site/images/38fa3dab7e6fc590b34655f62d0da351.jpg",
+        "https://kampouse-food.my.canva.site/alice-website-maybe/images/39755d4349dc138eb5b9684d629dd0c8.svg",
     },
   ];
   return (
-    <div class="gap-6  py-8 px-5  h-fit bg-white">
-      <div class="pt-2">
-        <div class="flex lg:flex-row flex-col">
-          <div class="lg:mb-0 mb-5">
-            <h1 class="text-5xl text-black  mb-5">Breakfast To-Go </h1>
-            <p class="text-black pl-2 w-1/2 mb-3">
-              No time to linger? That's fine. We've packed you a breakfast fit
-              for kings. Emphasis on "fit." Check out the ingredients:
-            </p>
-            {elems.map((elem) => {
-              return (
-                <li class="text-black pl-2 w-2/3 lg:ml-5" key={elem}>
-                  {elem}
-                </li>
-              );
-            })}
-          </div>
-          <img
-            src="https://kampouse-food.my.canva.site/images/2f9597cd42486a38dd77700f6066685b.jpg"
-            width={500}
-            height={500}
-            alt="Breakfast"
-            class=" border rounded-xl"
-          ></img>
-        </div>
-      </div>
-      <div class="lg:flex lg:flex-row">
+    <div class=" gap-8 lg:py-16 pt-2   h-fit bg-white">
+      <h1 class=" text-left text-5xl text-primary lg:pl-20 pb-5 m-8">Services</h1>
+      <div class="flex lg:flex-row md:flex-row flex-row self-center lg:pl-24 gap-5 ">
         {linksDescription.map((elem) => {
           return (
-            <div key={elem.description} class="lg:mx-24 mx-5 p-2">
+            <div class="m-2 flex flex-col  " key={elem.links}>
               <img
+                class=" my-2 mx-2   h-40 w-40 self-center "
                 src={elem.links}
-                width={500}
-                height={500}
-                alt="Breakfast"
-                class="w-screen pt-3 border rounded-xl"
-              ></img>
-              <h1 class="text-2xl text-black pl-2  text-center">
+                alt="rat activiy maybe?"
+                height={100}
+                width={100}
+              />
+              <p class=" text-2xl lg:py-8 font-semibold text-primary">
                 {elem.description}
-              </h1>
+              </p>
             </div>
           );
-        })}
+        })
+        }
       </div>
     </div>
   );
 };
 const Service = () => {
-  const serv = [
-    {
-      title: "Dine in",
-      description: "Reserve a table online so we know to expect you.",
-    },
-    {
-      title: "Take out",
-      description: "Order online and pick up your meal at the cafe.",
-    },
-    {
-      title: "Delivery",
-      description: "Order online and we'll bring your meal to you.",
-    },
-  ];
   return (
-    <div class="flex flex-col  h-fit lg:h-72 ">
-      <h1 class="text-5xl text-primary pl-2 pb-5 m-10">Our cafe, your way</h1>
-      <div class="flex lg:flex-row flex-col  self-center lg:ml-[10em]   place-self-center ">
-        {serv.map((elem) => {
-          return (
-            <>
-              <div class="flex  flex-col  align-middle  ">
-                <h1 key={elem.title} class=" text-center ">
-                  {elem.title}
-                </h1>
-                <p key={elem.description} class="m-5 mt-1 text-center">
-                  {elem.description}
-                </p>
-              </div>
-            </>
-          );
-        })}
-      </div>
+    <div class="flex flex-col  h-screen  ">
+
+
+
     </div>
   );
 };
@@ -201,7 +139,7 @@ export default component$(() => {
     <>
       <Header />
       <Description />
-      <BreakFasts />
+      <Services />
       <Service />
       <TailMenu />
       <Footer />
