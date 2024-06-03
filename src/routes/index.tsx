@@ -54,7 +54,7 @@ const Services = () => {
     },
   ];
   return (
-    <div class=" gap-8 lg:py-16 pt-2   h-fit bg-white">
+    <div class=" gap-8 lg:py-16 py-2 pb-5   h-fit bg-white">
       <h1 class=" text-left text-5xl text-primary lg:pl-20 pb-5 m-8">Services</h1>
       <div class="flex lg:flex-row md:flex-row flex-row self-center lg:pl-24 gap-5 ">
         {linksDescription.map((elem) => {
@@ -67,7 +67,7 @@ const Services = () => {
                 height={100}
                 width={100}
               />
-              <p class=" text-2xl lg:py-8 font-semibold text-primary">
+              <p class="  text-2xl lg:py-8 font-semibold text-primary">
                 {elem.description}
               </p>
             </div>
@@ -80,23 +80,26 @@ const Services = () => {
 };
 const Service = () => {
   return (
-    <div class="flex flex-col  h-screen  ">
+    <div class="flex flex-col lg:flex-row  h-fit   bg-primary ">
+      <img class="lg:rounded-r-[4em] w-screen lg:w-1/3 h-[35em] bg-cover lg:pr-5" src="https://images.nightcafe.studio/jobs/2Tym3Pji55bJwMxETWS5/2Tym3Pji55bJwMxETWS5--1--ciok5.jpg?tr=w-1600,c-at_max
+        "
+        height={500} width={250} />
+      <div class="flex flex-col  px-20   lg:pl-44 lg:pt-20 pt-10 text-black ">
 
+        <h1 class="text-4xl font-serif">what my latest client proclamed</h1>
+        <p class="my-5 text-lg font-medium lg:w-72 w-fit">
+          "Working with Aaliyah is a true blessing. She came in and turned our company around with an awesome online rebrand. She provided us with a comprehensive digital marketing strategy that shot our search engine rankings up and boosted our social media presence."
+        </p>
 
+        <h1 class="text-4xl"> - Yuqin Feng </h1>
+        <h1 class="text-base mb-8">  Founder and CEO, the rat foundation </h1>
 
+      </div >
     </div>
   );
 };
 
-const TailMenu = () => {
-  return (
-    <div class="h-[25rem] lg:h-screen  bg-hero-footer gap-24 mb-2 lg:gap-[20em] flex flex-col p-8     bg-cover  bg-center ">
-      <h1 class="text-[2rem] lg:pl-32 lg:text-8xl text-6xl text-primary p-5 pb-6 pt-1   ">
-        Healthy, hearty meals await. See you soon!
-      </h1>
-    </div>
-  );
-};
+
 
 const Footer = () => {
   return (
@@ -141,7 +144,6 @@ export default component$(() => {
       <Description />
       <Services />
       <Service />
-      <TailMenu />
       <Footer />
     </>
   );
